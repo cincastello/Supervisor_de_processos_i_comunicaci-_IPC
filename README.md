@@ -48,3 +48,7 @@ Executa 21 comprovacions automàtiques (èxit, codi 7, límit de 2 concurrents, 
 ## Documentació extesa
 
 La resta de documentació més detallada es pot trobar al document pdf enviat al professor. Hi son les decisions, incidències, activitats d'anàlisi.
+
+
+## PROBLEMA
+He tingut bastants problemes al fer el commit i m'ha tocat fer-ho a mà. En teoria no hauria de canviar res i està tot bé. Qualsevol cosa puc tornar a enviar el fitxer .java
