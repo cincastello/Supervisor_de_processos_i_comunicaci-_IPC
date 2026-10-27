@@ -21,38 +21,29 @@ Un únic programa Java (`src/Processos.java`) que fa de supervisor i de fills: e
 ## Requisits
 
 - JDK 21 (java -version)
-- Linux amb bash
+- Linux
 
 
 ## Arrencada
 
-bash
+Compilar (una sola vegada):
 
 
-chmod +x executa.sh     # només la primera vegada
-
-
-./executa.sh            # demostració completa
-
-
-./executa.sh pipe       # un escenari concret
-
-
-Escenaris: demo (per defecte), parallel, stdin, timeout, pipe, flood, cancel, arbre, tests.
-
-Si es prefereix a mà:
-
-bash
 mkdir -p out && javac -d out src/Processos.java
-java -Descenari=parallel -cp out Processos
+
+Executar un escenari (aquí, demo, que els fa servir tots seguits):
+
+bash
+java -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -Descenari=demo -cp out Processos
+
+Escenaris, amb -Descenari=: demo (per defecte), parallel, stdin, timeout, pipe, flood, cancel, arbre, tests.
 
 ## Proves
 
-bash
-./executa.sh tests
 
+java -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -Descenari=tests -cp out Processos
 
-Executa 21 comprovacions automàtiques (èxit, codi 7, límit de 2 concurrents, ordre inexistent, stderr, stdin, timeout, pipe, cancel·lació, arbre de processos). Acaba amb codi 0 si totes passen i amb 1 si en falla alguna.
+Executa 21 comprovacions automàtiques (èxit, codi 7, límit de 2 concurrents, ordre inexistent, stderr, stdin, timeout, pipe, cancel·lació, arbre de processos i 50.000 línies sense bloqueig). Acaba amb codi 0 si totes passen i amb 1 si en falla alguna.
 
 ## Documentació extesa
 
