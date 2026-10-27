@@ -27,8 +27,14 @@ Un únic programa Java (`src/Processos.java`) que fa de supervisor i de fills: e
 ## Arrencada
 
 bash
+
+
 chmod +x executa.sh     # només la primera vegada
+
+
 ./executa.sh            # demostració completa
+
+
 ./executa.sh pipe       # un escenari concret
 
 
